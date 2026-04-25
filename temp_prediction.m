@@ -1,5 +1,17 @@
 function temp_prediction(a)
 
+%TEMP_PREDICTION Real-time temperature monitoring with rate prediction
+%   This function continuously measures temperature, calculates the rate of 
+%   change using numerical differentiation, and predicts temperature in 
+%   5 minutes with a constant rate assumption. A moving window filter 
+%   reduces signal noise. Green LED (D3) activates in the comfort zone 
+%   (18-24°C). Red LED (D7) warns rapid heating (>4°C/min). Yellow LED 
+%   (D5) warns rapid cooling (<-4°C/min). Outputs rate, current and 
+%   predicted temperature to the console for cabin climate control.
+%
+%   Syntax: temp_prediction(a)
+%   Input:    a - Arduino object
+
     % Data buffers
     timeHistory = [];
     tempHistory = [];
