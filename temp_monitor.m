@@ -1,4 +1,11 @@
 function temp_monitor(a)
+
+%TEMP_MONITOR Real-time temperature monitoring system
+%This function reads temperature from a sensor, controls three LEDs 
+%with synchronized timing, updates a real-time plot periodically, 
+%and provides visual alerts. Green LED for comfort zone, 
+%yellow and red LEDs blink at fixed rates for low/high temperature.
+
 % Green LED: ON when temperature is between 18°C and 24°C
 % Yellow LED: Blinks every 0.5s when temperature < 18°C
 % Red LED: Blinks every 0.25s when temperature > 24°C

@@ -8,9 +8,6 @@ function temp_prediction(a)
 %   (18-24°C). Red LED (D7) warns rapid heating (>4°C/min). Yellow LED 
 %   (D5) warns rapid cooling (<-4°C/min). Outputs rate, current and 
 %   predicted temperature to the console for cabin climate control.
-%
-%   Syntax: temp_prediction(a)
-%   Input:    a - Arduino object
 
     % Data buffers
     timeHistory = [];
