@@ -5,7 +5,7 @@
 %% PRELIMINARY TASK - ARDUINO AND GIT INSTALLATION [5 MARKS]
 clear all
 clc
-% Insert answers here
+
 a = arduino();
 
 for k = 1:10
@@ -88,7 +88,8 @@ fprintf(fid, 'Data logging terminated\n');
 fclose(fid);
 %% TASK 2 - LED TEMPERATURE MONITORING DEVICE IMPLEMENTATION [25 MARKS]
 
-% Insert answers here
+% Call the temperature monitoring function
+temp_monitor(a);
 
 
 %% TASK 3 - ALGORITHMS – TEMPERATURE PREDICTION [30 MARKS]
